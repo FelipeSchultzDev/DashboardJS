@@ -1,5 +1,47 @@
-native-dashboard{
-    width: 200px;
-    height: 100px;
-    background-color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+kanban-container{
+    display: flex;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.300);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+kanban-column{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+    min-height: 120px;
+    margin-right: 8px;
+    background-color: rgba(0, 0, 255, 0.300);
+}
+
+kanban-column:last-child{
+    margin: 0;
+}
+
+kanban-column-title{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+kanban-column-content{
+    flex: 1;
+    padding: 4px;
+}
+
+kanban-card{
+    display: flex;
+    width: 100%;
+    height: 136px;
+    background-color: black;
+    margin-bottom: 4px;
 }
